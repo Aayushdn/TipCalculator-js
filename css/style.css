@@ -23,6 +23,10 @@
 
 }
 
+.FormCalculator{
+    font-size:clamp(2rem,5vw,1.3rem)
+}
+
 .FormCalculator * {
     margin: 2%;
 }
