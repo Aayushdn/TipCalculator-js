@@ -10,19 +10,22 @@
 </head>
 
 <body>
-    <div class="heading">
-        <h1 class="logo">
-            Tip Calclator
-        </h1>
-    </div>
-    <div class="calculator">
-        <form method="POST" class="FormCalculator" id="calculatorForm">
-            <fieldset class="FormBorder">
-                <legend> Please Enter Value</legend>
-                <input type="number" name="BillAmount" placeholder="Enter Your Bill Amount" class="inputTag" min="1" required>
-                <input type="number" name="TipPercent" placeholder="Enter Your Tip Percent" class="inputTag" min="1" required>
+<div class="heading">
+    <h1 class="logo">
+        Tip Calclator
+    </h1>
+</div>
+<div class="calculator">
+    <form method="POST" class="FormCalculator" id="calculatorForm">
+        <fieldset class="FormBorder">
+            <legend> Please Enter Value</legend>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <input type="number" name="BillAmount" placeholder="Enter Your Bill Amount" class="inputTag" min="1"
+                       required>
+                <input type="number" name="TipPercent" placeholder="Enter Your Tip Percent" class="inputTag" min="1"
+                       required>
 
-                <div class="dropDownMenu">
+                <div class="dropDownMenu" style="width: 100%">
                     <label for="QoS">
                         Your Quality of Service
                     </label>
@@ -33,30 +36,33 @@
                 </span>
 
                 </div>
-                <div class="PeopleRange">
-                    <input type="number" name="NoOfPeople" placeholder="Enter Number of People" class="inputTag" min="1" required>
-                    <input type ="checkbox" id="roundCheck"> <label for="roundCheck" class="RoundingLabel">Round it Up</label>
+                <div class="PeopleRange" style="text-align: center">
+                    <input type="number" name="NoOfPeople" placeholder="Enter Number of People" class="inputTag" min="1"
+                           required style="margin: 0 auto auto; width: 100%">
+                    <input type="checkbox" id="roundCheck"> <label for="roundCheck" class="RoundingLabel">Round it
+                    Up</label>
 
                 </div>
-                
+
 
                 <button class="CalculateBtn" type="submit">
-                    Calculate it 
+                    Calculate it
                 </button>
 
                 <div class="Result">
-                    <span>Your Tip is </span>    &dollar; <span class="tipAmt"></span>
-                    
+                    <span>Your Tip is </span> &dollar; <span class="tipAmt"></span>
+
                 </div>
-            </fieldset>
+            </div>
+        </fieldset>
 
 
-        </form>
-    </div>
-    <div class="footer">
+    </form>
+</div>
+<div class="footer">
 
-    </div>
-    <script src="js/script.js"></script>
+</div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
